@@ -1,31 +1,28 @@
-@import url("socialmediabar.css");
+@import url("css\socialmediabar.css");
 
 html{
-
     height: 100%;
 }
-
-
 body{
-
-     position: absolute;
-    margin: 0;
-    padding: 0;
-    min-height: 100%; 
-
+    
+  padding: 0;
+  margin: 0; 
+  min-height: 100%; 
 }
+
+    
 
 .page{
 
-    
+    width:100%;
     display: grid;
     grid-gap: 0;
-    grid-template-columns:900px 100px ;
-    grid-template-rows: 80px 800px 80px 10px;
+    grid-template-columns:14fr 2fr ;
+    grid-template-rows: 80px 900px 80px 10px;
    grid-template-areas: "header header"
     "main sidebar"
     "footer footer";
-    width: 100vw;
+    
     
 }
 
@@ -56,8 +53,8 @@ h4{
 
     grid-area: sidebar ;
     background-color: rgb(202, 150, 202);
-    width: 300px;
-    margin-left: 300px;
+    width: 200px;
+
 
 }
 
@@ -81,6 +78,50 @@ h5{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
     font-weight: bold;
+}
+.sidebar , ul{
+
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items:flex-start ;
+    flex-basis: 0;
+    padding:20px;
+    padding-top: 50px;
+
+}
+h2{
+  font-size: larger;
+  text-align: center;
+
+}
+.facebook{
+
+    vertical-align: middle;
+    padding-top: 30px;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.linkedin{
+    vertical-align: middle;
+    padding-top: 30px;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.twitter{
+
+    vertical-align: top;
+    padding-top: 30px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 @media (max-width: 600px)  {
 body{
